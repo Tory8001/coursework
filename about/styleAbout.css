@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Apex-Black";
+    src: url("./шрифт/font/Apex-Black.woff");
+    src: url("./шрифт/font/Apex-Black.woff") format("embedded-opentype"),
+    url("./шрифт/font/Apex-Black.woff") format("woff"),
+    url("./шрифт/font/Apex-Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* background-image: url("./img/фон.webp"); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto; */
+    background: linear-gradient(to right, #9d9c9c, #555555);
+     font-family: Apex-Black;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+}
+.str {
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    align-items: center;
+    background: fixed;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    /* border: 4px solid red; */
+}
+.logo {
+    width: 140px;
+    height: 100px;
+    margin-bottom: 20px;
+    overflow-y: hidden;
+
+}
+.logo1{
+    width: 100%;
+    
+}
+.one_d {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 532px;
+    align-items: center; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 130px;
+    /* background-image: url("./img/apex-section-bg-blogpage-xl.jpg.adapt.1920w.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+     */
+}
+.info1 > p {
+    font-size: 1vw; 
+}
+.info1 > h2 {
+    font-size: 2vw;
+}
+.osob {
+    font-size: 3vw;
+}
+.full {
+  /* width: 100%; */
+  max-width: 800px;
+  min-width: 150px;
+  /* font-size: 10vw; */
+  /* height: 100%; */
+  /* margin-left: 40px; */
+  border-radius: 7%;
+}
+.full1 {
+    width: 100%;
+    border-radius: 7%;
+    opacity: 0.7;
+    filter: alpha(opacity=40);
+    z-index: 0;
+}
+.start {
+margin-left: 70px;
+text-align: center;
+margin-right: 100px;
+}
+.start > p {
+    font-size: 1.5vw;
+}
+.skachat {
+    border-radius: 15px;
+    font-family: Apex-Black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #000000;
+    background: #c80000;
+    cursor: pointer;
+    /* position: relative; */
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.skachat2 {
+    border-radius: 15px;
+    font-family: Apex-Black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #000000;
+    background: #4646465a;
+    cursor: pointer;
+    /* position: relative; */
+    z-index: 0;
+    border-radius: 10px;
+}
+.dow {
+    width: 25px;
+    height: 25px;
+}
+.dost1 {
+    list-style-image: url(./icons/icons8-windows-os-60.png);
+    width: 30px;
+    height: 30px;
+}
+.dost2 {
+    list-style-image: url(./icons/icons8-xbox-50\ \(1\).png);
+    width: 30px;
+    height: 30px;
+}
+.dost3 {
+    list-style-image: url(./icons/icons8-steam-64.png);
+    width: 30px;
+    height: 30px;
+}
+.dost4 {
+    list-style-image: url(./icons/icons8-epic-games-50.png);
+    width: 30px;
+    height: 30px;
+}
+.two_d {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.leg {
+    width: 80%;
+    /* max-width: 250px;
+    max-height: 150px; */
+    border-radius: 5%;
+}
+.foot {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    text-align: center;
+    display: grid;
+    /* height: 100vh; */
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+
+.jac {
+    font-size: 40px;
+}
+
+.ic8 {
+    width: 100%;
+    min-width: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.info1 {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ 
+}
+.Sh2025 {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(59, 59, 59);
+    color: rgba(0, 0, 0, 0.39);
+    text-align: center;
+}
+@media(min-width: 1407px){
+    .start {
+        margin-left: 0px;
+        }
+}
