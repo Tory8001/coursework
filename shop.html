@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shop/shop.css">
+    <title>Apex info</title>
+</head>
+<body>
+    <header>
+        <div class="str">
+            <div class="logo">
+                <a href="./index.html"><img src="./legends/img/logo1.png"  class="logo1"></a>
+            </div>
+            <div class="ss"><a href="./about.html">об игре</a></div>
+            <div class="ss"><a href="./legends.html">Легенды</a></div>
+            <div class="ss"><a href="./shop.html">Магазин</a></div>
+            <div class="ss"><a href="./soobshestvo.html">Сообщество</a></div>
+        </div>
+    </header>
+    <main>
+        <!-- <div class="korsina"><img src="./shop/icons/icons8-shopping-cart-96.png" class="img1"><br><span id="sum">0</span><br><span id="summ">0</span></div>
+        <div><button onclick="korz6()">очистить</button></div> -->
+        <button class="cart" id="cart" onclick="korz6()">
+            <img class="cart__image" src="./shop/icons/icons8-shopping-cart-96.png" alt="Cart" />
+            <div class="cart__num" id="cart_num"><span id="sum" class="rt">0</span></div>
+        </button>
+        <div class="tovars">
+            <div class="tov1">
+                <img src="./shop/img/Apex-coins-500-game-art-1x1.avif" class="img2"><br>
+                <p>500 мон. apex</p>
+                <p>499,00 руб</p><br><button class="bt" onclick="korz()"><p class="rr">Добавить в карзину</p></button>
+            </div>
+            <div class="tov1">
+                <img src="./shop/img/Apex-coins-1000-game-art-1x1.avif" class="img2"><br>
+                <p>1 000 мон. apex</p>
+                <p>889,00 руб</p><br><button class="bt" onclick="korz1()"><p class="rr">Добавить в карзину</p></button>
+            </div>
+            <div class="tov1">
+                <img src="./shop/img/ApexCoins2000Dark.avif" class="img2"><br>
+                <p>2 000 мон. apex</p>
+                <p class="dop">+150 бонусом</p>
+                <p>1 799,00 руб</p><br><button class="bt" onclick="korz2()"><p class="rr">Добавить в карзину</p></button>
+            </div>
+            <div class="tov1">
+                <img src="./shop/img/ApexCoins4000Dark.avif" class="img2"><br>
+                <p>4 000 мон. apex</p>
+                <p class="dop">+350 бонусом</p>
+                <p>3 549,00 руб</p><br><button class="bt" onclick="korz3()"><p class="rr">Добавить в карзину</p></button>
+            </div><div class="tov1">
+                <img src="./shop/img/ApexCoins6000Dark.avif" class="img2"><br>
+                <p>6 000 мон. apex</p>
+                <p class="dop">+700 бонусом</p>
+                <p>5 299,00 руб</p><br><button class="bt" onclick="korz4()"><p class="rr">Добавить в карзину</p></button>
+            </div>
+            <div class="tov1">
+                <img src="./shop/img/ApexCoins10000Dark.avif" class="img2"><br>
+                <p>10 000 мон. apex</p>
+                <p class="dop">+1500 бонусом</p>
+                <p>8 799,00 руб</p><br><button class="bt" onclick="korz5()"><p class="rr">Добавить в карзину</p></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="info">
+                <div class="silc">
+                    <a href="https://store.steampowered.com/app/1172470/Apex_Legends/" class="ic8"><img src="./index/icons/icons8-steam-64.png" class="ic8"></a>
+                    <a href="https://store.epicgames.com/en-US/news/apex-legends-interview-epic-games-store" class="ic8"><img src="./index/icons/icons8-epic-games-50.png" class="ic8"></a>
+                    <a href="https://www.xbox.com/ru-RU/games/apex-legends" class="ic8"><img src="./index/icons/icons8-xbox-50 (1).png" class="ic8"></a>
+                </div>
+                <div class="silc">
+                    <img src="./index/img/logo1.png" alt="">
+                </div>
+                <div class="silc">
+                    <a href="https://t.me/aapexsg" class="ic8"><img src="./index/icons/icons8-телеграм-50.png" class="ic8"></a>
+                    <a href="https://vk.com/apexlegends" class="ic8"><img src="./index/icons/icons8-vk-50.png" class="ic8"></a>
+                    <a href="https://www.ea.com/ru/games/apex-legends/apex-legends  " class="ic8"><img src="./index/icons/1bcf634d-fc6e-47de-a30f-84c8a2064f79_removalai_preview.png" class="ic8"></a>
+                </div>
+            </div>
+            <div class="Sh2025">
+                <p class="Sh25">2025 Шведова</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    let summa=0
+let summ=0
+function korz(){summa+=499;
+document.getElementById("sum").innerHTML=summa
+summ+=1; document.getElementById("summ").innerHTML=summ}
+
+function korz1(){summa+=889;
+document.getElementById("sum").innerHTML=summa
+summ+=1; document.getElementById("summ").innerHTML=summ}
+
+function korz2(){summa+=1799;
+document.getElementById("sum").innerHTML=summa
+summ+=1; document.getElementById("summ").innerHTML=summ}
+
+function korz3(){summa+=3549;
+document.getElementById("sum").innerHTML=summa
+summ+=1; document.getElementById("summ").innerHTML=summ}
+
+function korz4(){summa+=5299;
+document.getElementById("sum").innerHTML=summa
+summ+=1; document.getElementById("summ").innerHTML=summ}
+
+function korz5(){summa+=8799;
+document.getElementById("sum").innerHTML=summa
+summ+=1; document.getElementById("summ").innerHTML=summ}
+
+function korz6(){summa=0; document.getElementById("sum").innerHTML=summa
+    summ=0; document.getElementById("summ").innerHTML=summ
+}
+</script>
+</html>
